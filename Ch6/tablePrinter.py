@@ -19,18 +19,6 @@ def printTable2(tableData):
         for column in range(len(tableData)):
             print(tableData[column][row].rjust(colWidths[column]), end = ' ')
         print()
-    
-    '''
-    colWidths = [0]*len(tableData)
-    for column in range(len(tableData)):
-        for row in range(len(tableData[column])):
-            if len(tableData[column][row])>colWidths[column]:
-                colWidths[column]=len(tableData[column][row])
-    for row in range(len(tableData[0])):
-        for column in range(len(tableData)):
-            print(tableData[column][row].rjust(colWidths[column]), end = ' ')
-        print()
-    '''
 
 tableData = [['apples', 'oranges', 'cherries', 'banana'],
             ['Alice', 'Bob', 'Carol', 'David'],
